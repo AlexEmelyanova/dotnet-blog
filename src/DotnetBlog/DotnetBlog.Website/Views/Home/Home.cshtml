@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Блог";
+    var verion = DateTime.UtcNow.ToString("yyyyMMddHHmmss");
+}
+
+<h2>Главная (home)</h2>
+
+<!-- css -->
+@section Styles {
+    <link rel="stylesheet" href="/css/pages/home.css?v=@verion" />
+}
+
+<!-- js -->
+@section Scripts {
+    <script type="text/javascript" src="/js/pages/home.js?v=@verion"></script>
+}
